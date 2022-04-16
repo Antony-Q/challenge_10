@@ -1,0 +1,19 @@
+{
+  "name": "challenge_10",
+  "version": "1.0.0",
+  "description": "OOP: team profile generator",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Antony-Q/challenge_10.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Antony-Q/challenge_10/issues"
+  },
+  "homepage": "https://github.com/Antony-Q/challenge_10#readme"
+}
