@@ -1,8 +1,8 @@
 const Engineer = require('../lib/Engineer.js');
 
 test('creates an Engineer object instance', () => {
-    const e = new Engineer();
-    expect(typeof (e)).toBe("object");
+    const b = new Engineer();
+    expect(typeof (b)).toBe("object");
 });
 
 

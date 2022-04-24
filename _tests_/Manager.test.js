@@ -1,8 +1,8 @@
 const Manager = require('../lib/Manager.js');
 
 test("creates an Manager object instance", () => {
-    const m = new Manager();
-    expect(typeof (m)).toBe("object");
+    const a = new Manager();
+    expect(typeof (a)).toBe("object");
 });
 
 
