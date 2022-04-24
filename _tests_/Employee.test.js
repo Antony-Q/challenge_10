@@ -1,29 +1,22 @@
-const { expect } = require('@jest/globals');
-const Employee = require('../lib/Employee.js');
+class Employee {
+  constructor(name, id, email) {
+      this.name = name;
+      this.id = id;
+      this.email = email;
+  };
+  // Getter Functions
+  getName() {
+      return this.name
+  };
+  getid() {
+      return this.id
+  };
+  getEmail() {
+      return this.email
+  };
+  getRole() {
+      return "Employee"
+  };
+}
 
-test('creates an employee object', () => {
-    const employee = new Employee('Joe', 104, 'Joe101@gmail.com');
-
-    expect(employee).toEqual(expect.any(Object));
-
-    expect(employee).toHaveProperty('name');
-    expect(employee).toHaveProperty('id');
-    expect(employee).toHaveProperty('email');
-    expect(employee).toHaveProperty('role');
-})
-
-test('get\'s employee name', () => {
-    expect(employee.getName()).toBe(employee.name)
-});
-
-test('get\'s employee id', () => {
-    expect(employee.getID()).toBe(employee.id)
-});
-
-test('get\'s employee role', () => {
-    expect(employee.getRole()).toBe('Employee')
-});
-
-test('get\'s employee email', () => {
-    expect(employee.getEmail()).toBe(employee.email)
-});
+module.exports = Employee;

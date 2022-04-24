@@ -1,6 +1,6 @@
 const Intern = require('../lib/Intern.js');
 
-test('creates an Intern object instance', () => {
+test('create intern instance', () => {
     const c = new Intern();
     expect(typeof (c)).toBe("object");
 });
@@ -11,7 +11,7 @@ test('creates an Intern object instance', () => {
     
 
     expect(intern.name).toBe(intern.getName());
-    expect(intern.id).toBe(intern.getId());
-    expect(intern.email).toBe(intern.getEmail());
+    expect(intern.id).toBe(intern.getid());
+    expect(intern.email).toBe(intern.getemail());
     expect(intern.getSchool()).toBe(intern.getSchool());
 });

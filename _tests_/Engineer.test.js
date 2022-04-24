@@ -6,12 +6,12 @@ test('creates an Engineer object instance', () => {
 });
 
 
-test('creates an Engineer object instance', () => {
+test('create engineer instance', () => {
     const engineer = new Engineer("Alex", 102, "Asterisk102@gmail.com", "https://github.com/Alex102");
     
     
     expect(engineer.name).toBe(engineer.getName());
-    expect(engineer.id).toBe(engineer.getId());
-    expect(engineer.email).toBe(engineer.getEmail());
+    expect(engineer.id).toBe(engineer.getid());
+    expect(engineer.email).toBe(engineer.getemail());
     expect(engineer.getGitHub()).toBe(engineer.getGitHub());
 });
