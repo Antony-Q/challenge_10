@@ -1,4 +1,4 @@
-const Employee = NodeRequire('../lib/Employee.js');
+const Employee = require('../lib/Employee.js');
 
 test('create employee instance', () => {
     const e = new Employee();
