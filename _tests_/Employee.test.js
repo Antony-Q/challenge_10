@@ -1,22 +1,15 @@
-class Employee {
-  constructor(name, id, email) {
-      this.name = name;
-      this.id = id;
-      this.email = email;
-  };
-  // Getter Functions
-  getName() {
-      return this.name
-  };
-  getid() {
-      return this.id
-  };
-  getEmail() {
-      return this.email
-  };
-  getRole() {
-      return "Employee"
-  };
-}
+const Employee = NodeRequire('../lib/Employee.js');
 
-module.exports = Employee;
+test('create employee instance', () => {
+    const e = new Employee();
+    expect(typeof (e)).toBe("object");
+});
+
+test('create employee instance', () => {
+    const employee = new Employee('Joe', 104, 'Joe101@gmail.com');
+    
+    expect(employee.name).toBe(employee.getName());
+    expect(employee.id).toBe(employee.getid());
+    expect(employee.email).toBe(employee.getemail());
+    expect(employee.getRole()).toBe("employee");
+});
